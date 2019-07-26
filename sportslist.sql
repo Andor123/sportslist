@@ -253,7 +253,7 @@ CREATE TABLE `cycling` (
   `bronze` int(11) DEFAULT NULL,
   `total` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -262,7 +262,7 @@ CREATE TABLE `cycling` (
 
 LOCK TABLES `cycling` WRITE;
 /*!40000 ALTER TABLE `cycling` DISABLE KEYS */;
-INSERT INTO `cycling` VALUES (1,67,41,27,23,91),(2,73,32,30,25,87),(3,92,33,16,10,59),(4,197,16,21,18,55),(5,11,14,19,18,51),(6,135,18,19,12,49),(7,71,25,29,27,81),(8,54,7,9,10,26),(9,19,7,7,11,25),(10,155,16,9,20,45),(11,181,5,8,6,19),(12,180,4,5,8,17),(13,174,5,5,5,15),(14,35,1,5,8,14),(15,150,0,7,4,11);
+INSERT INTO `cycling` VALUES (1,67,41,27,23,91),(2,73,32,30,25,87),(3,92,33,16,10,59),(4,197,16,21,18,55),(5,11,14,19,18,51),(6,135,18,19,12,49),(7,71,25,29,27,81),(8,54,7,9,10,26),(9,19,7,7,11,25),(10,155,16,9,20,45),(11,181,5,8,6,19),(12,180,4,5,8,17),(13,174,5,5,5,15),(14,35,1,5,8,14),(15,150,0,7,4,11),(16,173,1,4,3,8),(17,136,1,3,4,8),(18,41,1,3,3,7),(19,43,2,1,3,6),(20,53,3,3,2,8),(21,74,1,3,0,4),(22,94,0,1,3,4),(23,140,2,0,2,4),(24,12,1,0,2,3),(25,105,2,0,1,3),(26,195,0,1,2,3),(27,96,1,1,0,2),(28,123,0,1,1,2),(29,8,1,0,0,1),(30,18,0,0,1,1),(31,51,0,1,0,1),(32,63,1,0,0,1),(33,83,0,0,1,1),(34,93,0,0,1,1),(35,111,0,0,1,1),(36,116,0,0,1,1),(37,151,0,1,0,1),(38,198,0,1,0,1),(39,201,0,0,1,1);
 /*!40000 ALTER TABLE `cycling` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,6 +292,146 @@ LOCK TABLES `diving` WRITE;
 /*!40000 ALTER TABLE `diving` DISABLE KEYS */;
 INSERT INTO `diving` VALUES (1,197,49,44,45,138),(2,41,40,19,10,69),(3,180,6,8,7,21),(4,71,7,11,14,32),(5,155,8,14,13,35),(6,123,1,7,6,14),(7,11,3,3,7,13),(8,35,1,4,8,13),(9,92,3,5,3,11),(10,73,1,3,6,10),(11,53,1,1,0,2),(12,54,1,0,1,2),(13,59,0,1,1,2),(14,116,0,1,1,2),(15,195,0,0,2,2),(16,74,1,0,0,1),(17,67,0,1,0,1);
 /*!40000 ALTER TABLE `diving` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `equestrian`
+--
+
+DROP TABLE IF EXISTS `equestrian`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `equestrian` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `equestrian`
+--
+
+LOCK TABLES `equestrian` WRITE;
+/*!40000 ALTER TABLE `equestrian` DISABLE KEYS */;
+INSERT INTO `equestrian` VALUES (1,71,41,23,27,91),(2,197,11,21,20,52),(3,180,17,12,14,43),(4,67,14,13,10,37),(5,73,11,11,13,35),(6,135,10,13,3,26),(7,92,7,9,7,23),(8,181,5,10,8,23),(9,155,6,5,4,15),(10,11,6,3,3,12),(11,19,4,2,6,12),(12,136,3,2,4,9),(13,35,2,2,3,7),(14,123,2,1,4,7),(15,150,1,3,2,6),(16,54,0,4,2,6),(17,174,1,2,1,4),(18,12,1,1,1,3),(19,27,1,0,2,3),(20,151,0,0,3,3),(21,40,0,2,0,2),(22,154,0,1,1,2),(23,163,0,0,2,2),(24,8,0,1,0,1),(25,30,0,1,0,1),(26,53,1,0,0,1),(27,84,0,0,1,1),(28,90,0,0,1,1),(29,94,1,0,0,1),(30,140,0,1,0,1);
+/*!40000 ALTER TABLE `equestrian` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fencing`
+--
+
+DROP TABLE IF EXISTS `fencing`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fencing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fencing`
+--
+
+LOCK TABLES `fencing` WRITE;
+/*!40000 ALTER TABLE `fencing` DISABLE KEYS */;
+INSERT INTO `fencing` VALUES (1,92,49,43,33,125),(2,67,42,41,35,118),(3,84,37,23,27,87),(4,155,32,22,26,80),(5,71,14,18,14,46),(6,197,2,9,14,25),(7,150,4,9,9,22),(8,51,5,5,6,16),(9,154,4,5,7,16),(10,41,4,7,3,14),(11,100,4,2,5,11),(12,19,3,3,4,10),(13,73,1,8,0,9),(14,181,1,4,3,8),(15,12,1,1,5,7),(16,180,2,3,2,7),(17,54,1,2,3,6),(18,195,2,1,3,6),(19,135,0,0,5,5),(20,74,2,1,1,4),(21,94,0,2,0,2),(22,53,0,0,2,2),(23,201,1,0,0,1),(24,59,0,1,0,1),(25,123,0,1,0,1),(26,140,0,1,0,1),(27,8,0,0,1,1),(28,151,0,0,1,1),(29,174,0,0,1,1),(30,190,0,0,1,1);
+/*!40000 ALTER TABLE `fencing` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `field_hockey`
+--
+
+DROP TABLE IF EXISTS `field_hockey`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `field_hockey` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `field_hockey`
+--
+
+LOCK TABLES `field_hockey` WRITE;
+/*!40000 ALTER TABLE `field_hockey` DISABLE KEYS */;
+INSERT INTO `field_hockey` VALUES (1,135,5,6,6,17),(2,11,4,3,5,12),(3,73,4,2,6,12),(4,86,8,1,2,11),(5,71,5,5,5,15),(6,142,3,3,2,8),(7,8,1,2,2,5),(8,174,1,3,1,5),(9,100,0,3,0,3),(10,19,0,1,1,2),(11,155,0,0,2,2),(12,197,0,0,2,2),(13,41,0,1,0,1),(14,53,0,1,0,1),(15,54,0,1,0,1),(16,94,0,1,0,1),(17,136,1,0,0,1),(18,206,1,0,0,1);
+/*!40000 ALTER TABLE `field_hockey` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `football`
+--
+
+DROP TABLE IF EXISTS `football`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `football` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `football`
+--
+
+LOCK TABLES `football` WRITE;
+/*!40000 ALTER TABLE `football` DISABLE KEYS */;
+INSERT INTO `football` VALUES (1,27,1,5,2,8),(2,197,4,2,1,7),(3,84,3,1,1,5),(4,71,2,2,6,10),(5,155,2,0,3,5),(6,165,1,3,1,5),(7,8,2,2,0,4),(8,54,0,3,1,4),(9,180,1,1,2,4),(10,35,1,0,2,3),(11,73,3,0,0,3),(12,92,1,0,2,3),(13,135,0,0,3,3),(14,139,1,1,1,3),(15,140,1,0,2,3),(16,150,1,2,0,3),(17,174,1,2,0,3),(18,19,1,0,1,2),(19,30,0,1,1,2),(20,53,1,1,0,2),(21,67,1,1,0,2),(22,94,0,1,1,2),(23,198,2,0,0,2),(24,12,0,1,0,1),(25,34,1,0,0,1),(26,40,0,0,1,1),(27,41,0,1,0,1),(28,72,0,0,1,1),(29,123,1,0,0,1),(30,147,0,1,0,1),(31,100,0,0,1,1),(32,181,0,1,0,1);
+/*!40000 ALTER TABLE `football` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `golf`
+--
+
+DROP TABLE IF EXISTS `golf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `golf` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `golf`
+--
+
+LOCK TABLES `golf` WRITE;
+/*!40000 ALTER TABLE `golf` DISABLE KEYS */;
+INSERT INTO `golf` VALUES (1,197,3,3,5,11),(2,73,1,1,1,3),(3,35,1,0,0,1),(4,100,1,0,0,1),(5,136,0,1,0,1),(6,180,0,1,0,1),(7,41,0,0,1,1);
+/*!40000 ALTER TABLE `golf` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -359,4 +499,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-25 15:19:38
+-- Dump completed on 2019-07-26 15:10:34

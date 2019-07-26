@@ -74,6 +74,20 @@ include('config.php');
 				<div class="magenta"><a href="olympics/equestrian.php">Equestrian</a></div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/fencing.php">Fencing</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/fieldhockey.php">Field Hockey</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/football.php">Football</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/golf.php">Golf</a></div>
+			</div>
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
