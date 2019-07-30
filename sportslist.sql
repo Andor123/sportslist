@@ -505,7 +505,7 @@ CREATE TABLE `judo` (
   `bronze` int(11) DEFAULT NULL,
   `total` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -575,6 +575,62 @@ INSERT INTO `rowing` VALUES (1,197,33,32,24,89),(2,73,31,24,13,68),(3,71,64,29,2
 UNLOCK TABLES;
 
 --
+-- Table structure for table `rugby_sevens`
+--
+
+DROP TABLE IF EXISTS `rugby_sevens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rugby_sevens` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rugby_sevens`
+--
+
+LOCK TABLES `rugby_sevens` WRITE;
+/*!40000 ALTER TABLE `rugby_sevens` DISABLE KEYS */;
+INSERT INTO `rugby_sevens` VALUES (1,11,1,0,0,1),(2,65,1,0,0,1),(3,73,0,1,0,1),(4,136,0,1,0,1),(5,35,0,0,1,1),(6,173,0,0,1,1);
+/*!40000 ALTER TABLE `rugby_sevens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sailing`
+--
+
+DROP TABLE IF EXISTS `sailing`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sailing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sailing`
+--
+
+LOCK TABLES `sailing` WRITE;
+/*!40000 ALTER TABLE `sailing` DISABLE KEYS */;
+INSERT INTO `sailing` VALUES (1,197,19,23,18,60),(2,73,28,19,11,58),(3,67,12,9,14,35),(4,180,10,12,13,35),(5,140,17,11,3,31),(6,54,12,9,9,30),(7,11,11,9,8,27),(8,136,9,7,6,22),(9,135,7,9,7,23),(10,174,13,5,1,19),(11,27,7,3,8,18),(12,92,3,3,8,14),(13,155,4,6,5,15),(14,71,8,9,10,27),(15,66,2,2,7,11),(16,8,1,4,5,10);
+/*!40000 ALTER TABLE `sailing` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `swimming`
 --
 
@@ -639,4 +695,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-29 15:18:18
+-- Dump completed on 2019-07-30 15:42:13
