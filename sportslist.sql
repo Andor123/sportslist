@@ -158,6 +158,62 @@ INSERT INTO `basketball` VALUES (1,197,23,2,3,28),(2,155,5,4,7,16),(3,165,1,6,3,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `beach_volleyball`
+--
+
+DROP TABLE IF EXISTS `beach_volleyball`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `beach_volleyball` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `beach_volleyball`
+--
+
+LOCK TABLES `beach_volleyball` WRITE;
+/*!40000 ALTER TABLE `beach_volleyball` DISABLE KEYS */;
+INSERT INTO `beach_volleyball` VALUES (1,27,3,7,3,13),(2,197,6,2,2,10),(3,71,2,0,1,3),(4,11,1,0,1,2),(5,41,0,1,1,2),(6,92,0,1,0,1),(7,174,0,1,0,1),(8,35,0,0,1,1),(9,105,0,0,1,1),(10,135,0,0,1,1),(11,181,0,0,1,1);
+/*!40000 ALTER TABLE `beach_volleyball` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `biathlon`
+--
+
+DROP TABLE IF EXISTS `biathlon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `biathlon` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `biathlon`
+--
+
+LOCK TABLES `biathlon` WRITE;
+/*!40000 ALTER TABLE `biathlon` DISABLE KEYS */;
+INSERT INTO `biathlon` VALUES (1,71,23,27,18,68),(2,140,16,15,10,41),(3,67,9,5,12,26),(4,155,21,11,15,47),(5,180,5,3,6,14),(6,18,4,3,3,10),(7,169,3,3,1,7),(8,66,0,5,2,7),(9,53,0,4,3,7),(10,12,0,3,3,6),(11,92,0,1,5,6),(12,195,1,1,3,5),(13,35,2,0,1,3),(14,181,1,1,0,2),(15,30,1,0,1,2),(16,170,0,1,1,2),(17,96,0,1,0,1),(18,150,0,1,0,1),(19,50,0,0,1,1);
+/*!40000 ALTER TABLE `biathlon` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `boxing`
 --
 
@@ -799,6 +855,34 @@ INSERT INTO `triathlon` VALUES (1,73,2,1,2,5),(2,181,2,1,2,5),(3,11,1,2,2,5),(4,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `volleyball`
+--
+
+DROP TABLE IF EXISTS `volleyball`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `volleyball` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `volleyball`
+--
+
+LOCK TABLES `volleyball` WRITE;
+/*!40000 ALTER TABLE `volleyball` DISABLE KEYS */;
+INSERT INTO `volleyball` VALUES (1,155,8,8,3,19),(2,27,5,3,2,10),(3,197,3,3,4,10),(4,94,3,3,3,9),(5,41,3,1,2,6),(6,92,0,3,3,6),(7,51,3,0,2,5),(8,150,1,0,2,3),(9,135,1,1,0,2),(10,165,1,1,1,3),(11,71,0,2,0,2),(12,30,0,1,1,2),(13,53,0,1,1,2),(14,148,0,1,0,1),(15,8,0,0,1,1),(16,99,0,0,1,1),(17,154,0,0,1,1),(18,100,0,0,1,1);
+/*!40000 ALTER TABLE `volleyball` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `water_polo`
 --
 
@@ -825,6 +909,62 @@ LOCK TABLES `water_polo` WRITE;
 INSERT INTO `water_polo` VALUES (1,84,9,3,3,15),(2,197,2,5,4,11),(3,92,4,3,3,10),(4,165,4,5,3,12),(5,155,2,3,7,12),(6,19,0,4,2,6),(7,73,4,0,0,4),(8,67,1,0,3,4),(9,50,1,2,0,3),(10,71,1,2,1,4),(11,174,1,2,0,3),(12,11,1,0,2,3),(13,135,1,0,2,3),(14,180,0,1,2,3),(15,74,0,1,0,1);
 /*!40000 ALTER TABLE `water_polo` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `weightlifting`
+--
+
+DROP TABLE IF EXISTS `weightlifting`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `weightlifting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `weightlifting`
+--
+
+LOCK TABLES `weightlifting` WRITE;
+/*!40000 ALTER TABLE `weightlifting` DISABLE KEYS */;
+INSERT INTO `weightlifting` VALUES (1,155,48,32,9,89),(2,41,31,15,8,54),(3,197,16,16,12,44),(4,30,12,17,8,37),(5,150,6,5,23,34),(6,71,9,13,16,38),(7,84,2,9,9,20),(8,88,8,6,5,19),(9,99,5,7,5,17),(10,67,9,3,3,15),(11,74,6,5,4,15),(12,92,5,4,5,14),(13,94,2,3,9,14),(14,154,2,7,4,13),(15,185,5,2,5,12),(16,100,3,4,5,12),(17,191,8,1,2,11),(18,59,5,2,4,11),(19,87,0,5,5,10),(20,12,3,4,2,9),(21,53,3,2,3,8),(22,51,2,1,5,8),(23,18,1,4,3,8),(24,96,1,4,3,8),(25,42,1,2,5,8),(26,43,2,3,2,7),(27,63,1,3,3,7),(28,73,1,3,3,7),(29,195,3,1,1,5),(30,9,0,3,2,5),(31,70,2,0,2,4),(32,19,1,2,1,4),(33,35,1,2,1,4),(34,11,1,1,2,4),(35,181,0,2,2,4),(36,180,0,0,4,4),(37,54,1,2,0,3),(38,66,1,0,2,3),(39,123,1,0,2,3),(40,189,0,1,2,3),(41,135,0,0,3,3),(42,50,1,0,1,2),(43,8,0,1,1,2),(44,105,0,1,1,2),(45,140,1,0,0,1),(46,199,1,0,0,1),(47,106,0,1,0,1),(48,112,0,1,0,1),(49,139,0,1,0,1),(50,149,0,1,0,1),(51,168,0,1,0,1),(52,202,0,1,0,1),(53,13,0,0,1,1),(54,34,0,0,1,1),(55,86,0,0,1,1),(56,89,0,0,1,1),(57,111,0,0,1,1),(58,153,0,0,1,1),(59,174,0,0,1,1),(60,201,0,0,1,1);
+/*!40000 ALTER TABLE `weightlifting` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `wrestling`
+--
+
+DROP TABLE IF EXISTS `wrestling`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wrestling` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wrestling`
+--
+
+LOCK TABLES `wrestling` WRITE;
+/*!40000 ALTER TABLE `wrestling` DISABLE KEYS */;
+INSERT INTO `wrestling` VALUES (1,197,54,43,35,132),(2,155,98,47,43,188),(3,180,28,27,31,86),(4,66,26,28,29,83),(5,94,32,20,17,69),(6,30,16,32,21,69),(7,191,29,18,16,63),(8,84,19,16,19,54),(9,88,9,14,20,43),(10,100,11,11,14,36),(11,154,7,8,18,33),(12,150,5,9,12,26),(13,71,8,24,18,50),(14,51,9,6,7,22),(15,13,4,7,11,22),(16,92,7,4,10,21),(17,67,4,4,10,18),(18,70,3,4,11,18),(19,35,3,7,7,17),(20,73,3,4,10,17),(21,165,5,6,6,17),(22,53,1,7,7,15),(23,96,1,5,9,15),(24,181,4,4,6,14),(25,195,3,5,6,14),(26,63,5,2,4,11),(27,74,1,3,7,11),(28,18,0,4,7,11),(29,99,3,2,5,10),(30,41,2,3,5,10),(31,127,0,4,5,9),(32,54,0,3,6,9),(33,199,3,2,3,8),(34,9,2,3,3,8),(35,59,2,3,2,7),(36,140,2,2,2,6),(37,86,0,1,4,5),(38,19,0,3,0,3),(39,11,0,1,2,3),(40,106,0,1,2,3),(41,111,0,1,1,2),(42,12,0,0,2,2),(43,43,0,0,2,2),(44,105,0,1,0,1),(45,123,0,1,0,1),(46,182,0,1,0,1),(47,113,0,0,1,1),(48,125,0,0,1,1),(49,142,0,0,1,1),(50,190,0,0,1,1);
+/*!40000 ALTER TABLE `wrestling` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -835,4 +975,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-31 15:06:00
+-- Dump completed on 2019-08-01 15:12:00

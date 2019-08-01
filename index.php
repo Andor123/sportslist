@@ -24,8 +24,7 @@ include('config.php');
 		</div>
 		<div class="row">
 			<div class="col">
-				<h2>Olympic Games</h2>
-				<h3>Summer</h3>
+				<h2>Summer Olympic Games</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -124,6 +123,39 @@ include('config.php');
 			</div>
 			<div class="col-12 col-md-3 col-lg-3">
 				<div class="magenta"><a href="olympics/triathlon.php">Triathlon</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/volleyball.php">Volleyball</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/beach.php">Beach Volleyball</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/weightlifting.php">Weightlifting</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/wrestling.php">Wrestling</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h2>Winter Olympic Games</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/biathlon.php">Biathlon</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/bobsleigh.php">Bobsleigh</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/skeleton.php">Skeleton</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/wcurling.php">Curling</a></div>
 			</div>
 		</div>
 	</div>
