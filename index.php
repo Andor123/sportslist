@@ -22,11 +22,13 @@ include('config.php');
 				<p class="lead">In this site we are going to list the countries by their achievements in sports!<br>So without any further a-do, let's do this!</p>
 			</div>
 		</div>
+		<br>
 		<div class="row">
 			<div class="col">
 				<h2>Summer Olympic Games</h2>
 			</div>
 		</div>
+		<br>
 		<div class="row">
 			<div class="col-12 col-md-3 col-lg-3">
 				<div class="cyan"><a href="olympics/artistic.php">Artistic Swimming</a></div>
@@ -139,11 +141,13 @@ include('config.php');
 				<div class="yellow"><a href="olympics/wrestling.php">Wrestling</a></div>
 			</div>
 		</div>
+		<br>
 		<div class="row">
 			<div class="col">
 				<h2>Winter Olympic Games</h2>
 			</div>
 		</div>
+		<br>
 		<div class="row">
 			<div class="col-12 col-md-3 col-lg-3">
 				<div class="cyan"><a href="olympics/biathlon.php">Biathlon</a></div>
@@ -155,7 +159,35 @@ include('config.php');
 				<div class="yellow"><a href="olympics/skeleton.php">Skeleton</a></div>
 			</div>
 			<div class="col-12 col-md-3 col-lg-3">
-				<div class="white"><a href="olympics/wcurling.php">Curling</a></div>
+				<div class="white"><a href="olympics/curling.php">Curling</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/icehockey.php">Ice Hockey</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/luge.php">Luge</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/figure.php">Figure Skating</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/shorttrack.php">Short Track</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/speed.php">Speed Skating</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/alpine.php">Alpine Skiing</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/crosscountry.php">Cross-Country Skiing</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/freestyle.php">Freestyle Skiing</a></div>
 			</div>
 		</div>
 	</div>
