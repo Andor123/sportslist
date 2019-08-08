@@ -158,6 +158,34 @@ INSERT INTO `badminton` VALUES (1,41,18,8,15,41),(2,87,7,6,6,19),(3,100,6,7,6,19
 UNLOCK TABLES;
 
 --
+-- Table structure for table `baseball`
+--
+
+DROP TABLE IF EXISTS `baseball`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `baseball` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `baseball`
+--
+
+LOCK TABLES `baseball` WRITE;
+/*!40000 ALTER TABLE `baseball` DISABLE KEYS */;
+INSERT INTO `baseball` VALUES (1,51,3,2,0,5),(2,197,1,0,2,3),(3,94,0,1,2,3),(4,100,1,0,1,2),(5,11,0,1,0,1),(6,42,0,1,0,1);
+/*!40000 ALTER TABLE `baseball` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `basketball`
 --
 
@@ -183,6 +211,34 @@ LOCK TABLES `basketball` WRITE;
 /*!40000 ALTER TABLE `basketball` DISABLE KEYS */;
 INSERT INTO `basketball` VALUES (1,197,23,2,3,28),(2,155,5,4,7,16),(3,165,1,6,3,10),(4,174,0,4,1,5),(5,11,0,3,2,5),(6,27,0,1,4,5),(7,67,0,3,0,3),(8,111,0,0,3,3),(9,8,1,0,1,2),(10,92,0,2,0,2),(11,30,0,1,1,2),(12,41,0,1,1,2),(13,198,0,0,2,2),(14,35,0,1,0,1),(15,50,0,1,0,1),(16,100,0,1,0,1),(17,51,0,0,1,1),(18,123,0,0,1,1);
 /*!40000 ALTER TABLE `basketball` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `basque_pelota`
+--
+
+DROP TABLE IF EXISTS `basque_pelota`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `basque_pelota` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `basque_pelota`
+--
+
+LOCK TABLES `basque_pelota` WRITE;
+/*!40000 ALTER TABLE `basque_pelota` DISABLE KEYS */;
+INSERT INTO `basque_pelota` VALUES (1,174,1,0,0,1),(2,67,0,1,0,1);
+/*!40000 ALTER TABLE `basque_pelota` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -348,6 +404,62 @@ LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries` DISABLE KEYS */;
 INSERT INTO `countries` VALUES (1,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Afghanistan.svg/150px-Flag_of_Afghanistan.svg.png','Afghanistan'),(2,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/140px-Flag_of_Albania.svg.png','Albania'),(3,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/150px-Flag_of_Algeria.svg.png','Algeria'),(4,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Flag_of_American_Samoa.svg/220px-Flag_of_American_Samoa.svg.png','American Samoa'),(5,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/143px-Flag_of_Andorra.svg.png','Andorra'),(6,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/150px-Flag_of_Angola.svg.png','Angola'),(7,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/150px-Flag_of_Antigua_and_Barbuda.svg.png','Antigua and Barbuda'),(8,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/160px-Flag_of_Argentina.svg.png','Argentina'),(9,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/180px-Flag_of_Armenia.svg.png','Armenia'),(10,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Aruba.svg/220px-Flag_of_Aruba.svg.png','Aruba'),(11,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/180px-Flag_of_Australia_%28converted%29.svg.png','Australia'),(12,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/255px-Flag_of_Austria.svg.png','Austria'),(13,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/180px-Flag_of_Azerbaijan.svg.png','Azerbaijan'),(14,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/180px-Flag_of_the_Bahamas.svg.png','Bahamas'),(15,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/167px-Flag_of_Bahrain.svg.png','Bahrain'),(16,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/167px-Flag_of_Bangladesh.svg.png','Bangladesh'),(17,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/150px-Flag_of_Barbados.svg.png','Barbados'),(18,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/180px-Flag_of_Belarus.svg.png','Belarus'),(19,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/196px-Flag_of_Belgium.svg.png','Belgium'),(20,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_of_Belize.svg/150px-Flag_of_Belize.svg.png','Belize'),(21,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/150px-Flag_of_Benin.svg.png','Benin'),(22,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/220px-Flag_of_Bermuda.svg.png','Bermuda'),(23,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Flag_of_Bhutan.svg/255px-Flag_of_Bhutan.svg.png','Bhutan'),(24,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/147px-Flag_of_Bolivia.svg.png','Bolivia'),(25,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/180px-Flag_of_Bosnia_and_Herzegovina.svg.png','Bosnia and Herzegovina'),(26,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Botswana.svg/255px-Flag_of_Botswana.svg.png','Botswana'),(27,'https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/143px-Flag_of_Brazil.svg.png','Brazil'),(28,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_the_British_Virgin_Islands.svg/220px-Flag_of_the_British_Virgin_Islands.svg.png','British Virgin Islands'),(29,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/180px-Flag_of_Brunei.svg.png','Brunei'),(30,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/167px-Flag_of_Bulgaria.svg.png','Bulgaria'),(31,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Burkina_Faso.svg/255px-Flag_of_Burkina_Faso.svg.png','Burkina Faso'),(32,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Burundi.svg/167px-Flag_of_Burundi.svg.png','Burundi'),(33,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/157px-Flag_of_Cambodia.svg.png','Cambodia'),(34,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Cameroon.svg/150px-Flag_of_Cameroon.svg.png','Cameroon'),(35,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/180px-Flag_of_Canada_%28Pantone%29.svg.png','Canada'),(36,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Cape_Verde.svg/170px-Flag_of_Cape_Verde.svg.png','Cape Verde'),(37,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_the_Cayman_Islands.svg/220px-Flag_of_the_Cayman_Islands.svg.png','Cayman Islands'),(38,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Central_African_Republic.svg/150px-Flag_of_the_Central_African_Republic.svg.png','Central African Republic'),(39,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Chad.svg/150px-Flag_of_Chad.svg.png','Chad'),(40,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/150px-Flag_of_Chile.svg.png','Chile'),(41,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png','China'),(42,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Flag_of_Chinese_Taipei_for_Olympic_games.svg/220px-Flag_of_Chinese_Taipei_for_Olympic_games.svg.png','Chinese Taipei'),(43,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/150px-Flag_of_Colombia.svg.png','Colombia'),(44,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag_of_the_Comoros.svg/167px-Flag_of_the_Comoros.svg.png','Comoros'),(45,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/255px-Flag_of_the_Republic_of_the_Congo.svg.png','Republic of the Congo'),(46,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/133px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png','Democratic Replublic of the Congo'),(47,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_the_Cook_Islands.svg/180px-Flag_of_the_Cook_Islands.svg.png','Cook Islands'),(48,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/167px-Flag_of_Costa_Rica.svg.png','Costa Rica'),(49,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/150px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png','Ivory Coast'),(50,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/180px-Flag_of_Croatia.svg.png','Croatia'),(51,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/180px-Flag_of_Cuba.svg.png','Cuba'),(52,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Cyprus.svg/255px-Flag_of_Cyprus.svg.png','Cyprus'),(53,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/255px-Flag_of_the_Czech_Republic.svg.png','Czech Republic'),(54,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/132px-Flag_of_Denmark.svg.png','Denmark'),(55,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_Djibouti.svg/150px-Flag_of_Djibouti.svg.png','Djibouti'),(56,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Dominica.svg/180px-Flag_of_Dominica.svg.png','Dominica'),(57,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/150px-Flag_of_the_Dominican_Republic.svg.png','Dominican Republic'),(58,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/255px-Flag_of_Ecuador.svg.png','Ecuador'),(59,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/150px-Flag_of_Egypt.svg.png','Egypt'),(60,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_El_Salvador.svg/167px-Flag_of_El_Salvador.svg.png','El Salvador'),(61,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Equatorial_Guinea.svg/150px-Flag_of_Equatorial_Guinea.svg.png','Equatorial Guinea'),(62,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_Eritrea.svg/180px-Flag_of_Eritrea.svg.png','Eritrea'),(63,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/157px-Flag_of_Estonia.svg.png','Estonia'),(64,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/180px-Flag_of_Ethiopia.svg.png','Ethiopia'),(65,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Fiji.svg/180px-Flag_of_Fiji.svg.png','Fiji'),(66,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/164px-Flag_of_Finland.svg.png','Finland'),(67,'https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/150px-Flag_of_France.svg.png','France'),(68,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_of_Gabon.svg/133px-Flag_of_Gabon.svg.png','Gabon'),(69,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_The_Gambia.svg/150px-Flag_of_The_Gambia.svg.png','Gambia'),(70,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/150px-Flag_of_Georgia.svg.png','Georgia'),(71,'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/167px-Flag_of_Germany.svg.png','Germany'),(72,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png','Ghana'),(73,'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/180px-Flag_of_the_United_Kingdom.svg.png','Great Britain'),(74,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png','Greece'),(75,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/167px-Flag_of_Grenada.svg.png','Grenada'),(76,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Flag_of_Guam.svg/220px-Flag_of_Guam.svg.png','Guam'),(77,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/160px-Flag_of_Guatemala.svg.png','Guatemala'),(78,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Flag_of_Guinea.svg/255px-Flag_of_Guinea.svg.png','Guinea'),(79,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Guinea-Bissau.svg/180px-Flag_of_Guinea-Bissau.svg.png','Guinea-Bissau'),(80,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/167px-Flag_of_Guyana.svg.png','Guyana'),(81,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/167px-Flag_of_Haiti.svg.png','Haiti'),(82,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/180px-Flag_of_Honduras.svg.png','Honduras'),(83,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/220px-Flag_of_Hong_Kong.svg.png','Hong Kong'),(84,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/180px-Flag_of_Hungary.svg.png','Hungary'),(85,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/139px-Flag_of_Iceland.svg.png','Iceland'),(86,'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png','India'),(87,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/150px-Flag_of_Indonesia.svg.png','Indonesia'),(88,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/175px-Flag_of_Iran.svg.png','Iran'),(89,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/150px-Flag_of_Iraq.svg.png','Iraq'),(90,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/180px-Flag_of_Ireland.svg.png','Ireland'),(91,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/138px-Flag_of_Israel.svg.png','Israel'),(92,'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/150px-Flag_of_Italy.svg.png','Italy'),(93,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/180px-Flag_of_Jamaica.svg.png','Jamaica'),(94,'https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/150px-Flag_of_Japan.svg.png','Japan'),(95,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/180px-Flag_of_Jordan.svg.png','Jordan'),(96,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/180px-Flag_of_Kazakhstan.svg.png','Kazakhstan'),(97,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/255px-Flag_of_Kenya.svg.png','Kenya'),(98,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kiribati.svg/180px-Flag_of_Kiribati.svg.png','Kiribati'),(99,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/180px-Flag_of_North_Korea.svg.png','North Korea'),(100,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/255px-Flag_of_South_Korea.svg.png','South Korea'),(101,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Kosovo.svg/140px-Flag_of_Kosovo.svg.png','Kosovo'),(102,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/180px-Flag_of_Kuwait.svg.png','Kuwait'),(103,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/167px-Flag_of_Kyrgyzstan.svg.png','Kyrgyzstan'),(104,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Laos.svg/255px-Flag_of_Laos.svg.png','Laos'),(105,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/180px-Flag_of_Latvia.svg.png','Latvia'),(106,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/150px-Flag_of_Lebanon.svg.png','Lebanon'),(107,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Lesotho.svg/255px-Flag_of_Lesotho.svg.png','Lesotho'),(108,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_Liberia.svg/180px-Flag_of_Liberia.svg.png','Liberia'),(109,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Libya.svg/180px-Flag_of_Libya.svg.png','Libya'),(110,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Liechtenstein.svg/167px-Flag_of_Liechtenstein.svg.png','Liechtenstein'),(111,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Lithuania.svg/167px-Flag_of_Lithuania.svg.png','Lithuania'),(112,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/167px-Flag_of_Luxembourg.svg.png','Luxembourg'),(113,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/180px-Flag_of_North_Macedonia.svg.png','North Macedonia'),(114,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Madagascar.svg/255px-Flag_of_Madagascar.svg.png','Madagascar'),(115,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_Malawi.svg/150px-Flag_of_Malawi.svg.png','Malawi'),(116,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/180px-Flag_of_Malaysia.svg.png','Malaysia'),(117,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/150px-Flag_of_Maldives.svg.png','Maldives'),(118,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mali.svg/150px-Flag_of_Mali.svg.png','Mali'),(119,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/255px-Flag_of_Malta.svg.png','Malta'),(120,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flag_of_the_Marshall_Islands.svg/180px-Flag_of_the_Marshall_Islands.svg.png','Marshall Islands'),(121,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/150px-Flag_of_Mauritania.svg.png','Mauritania'),(122,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Mauritius.svg/150px-Flag_of_Mauritius.svg.png','Mauritius'),(123,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/175px-Flag_of_Mexico.svg.png','Mexico'),(124,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg/180px-Flag_of_the_Federated_States_of_Micronesia.svg.png','Federated States of Micronesia'),(125,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/180px-Flag_of_Moldova.svg.png','Moldova'),(126,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/125px-Flag_of_Monaco.svg.png','Monaco'),(127,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Mongolia.svg/180px-Flag_of_Mongolia.svg.png','Mongolia'),(128,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/180px-Flag_of_Montenegro.svg.png','Montenegro'),(129,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/255px-Flag_of_Morocco.svg.png','Morocco'),(130,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Mozambique.svg/150px-Flag_of_Mozambique.svg.png','Mozambique'),(131,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/150px-Flag_of_Myanmar.svg.png','Myanmar'),(132,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Namibia.svg/255px-Flag_of_Namibia.svg.png','Namibia'),(133,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Nauru.svg/180px-Flag_of_Nauru.svg.png','Nauru'),(134,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/82px-Flag_of_Nepal.svg.png','Nepal'),(135,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png','Netherlands'),(136,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/180px-Flag_of_New_Zealand.svg.png','New Zealand'),(137,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Nicaragua.svg/167px-Flag_of_Nicaragua.svg.png','Nicaragua'),(138,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flag_of_Niger.svg/117px-Flag_of_Niger.svg.png','Niger'),(139,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/180px-Flag_of_Nigeria.svg.png','Nigeria'),(140,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/138px-Flag_of_Norway.svg.png','Norway'),(141,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/180px-Flag_of_Oman.svg.png','Oman'),(142,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png','Pakistan'),(143,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Palau.svg/160px-Flag_of_Palau.svg.png','Palau'),(144,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/180px-Flag_of_Palestine.svg.png','Palestine'),(145,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/150px-Flag_of_Panama.svg.png','Panama'),(146,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Papua_New_Guinea.svg/133px-Flag_of_Papua_New_Guinea.svg.png','Papua New Guinea'),(147,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/180px-Flag_of_Paraguay.svg.png','Paraguay'),(148,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_%28state%29.svg/255px-Flag_of_Peru_%28state%29.svg.png','Peru'),(149,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/180px-Flag_of_the_Philippines.svg.png','Philippines'),(150,'https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/160px-Flag_of_Poland.svg.png','Poland'),(151,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/150px-Flag_of_Portugal.svg.png','Portugal'),(152,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/220px-Flag_of_Puerto_Rico.svg.png','Puerto Rico'),(153,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/180px-Flag_of_Qatar.svg.png','Qatar'),(154,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/255px-Flag_of_Romania.svg.png','Romania'),(155,'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/150px-Flag_of_Russia.svg.png','Russia'),(156,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/255px-Flag_of_Rwanda.svg.png','Rwanda'),(157,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg/255px-Flag_of_Saint_Kitts_and_Nevis.svg.png','Saint Kitts and Nevis'),(158,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Saint_Lucia.svg/180px-Flag_of_Saint_Lucia.svg.png','Saint Lucia'),(159,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg/150px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png','Saint Vincent and the Grenadines'),(160,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Samoa.svg/180px-Flag_of_Samoa.svg.png','Samoa'),(161,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_San_Marino.svg/133px-Flag_of_San_Marino.svg.png','San Marino'),(162,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Sao_Tome_and_Principe.svg/180px-Flag_of_Sao_Tome_and_Principe.svg.png','São Tomé and Príncipe'),(163,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/150px-Flag_of_Saudi_Arabia.svg.png','Saudi Arabia'),(164,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/255px-Flag_of_Senegal.svg.png','Senegal'),(165,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/150px-Flag_of_Serbia.svg.png','Serbia'),(166,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Seychelles.svg/180px-Flag_of_Seychelles.svg.png','Seychelles'),(167,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Sierra_Leone.svg/150px-Flag_of_Sierra_Leone.svg.png','Sierra Leone'),(168,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/150px-Flag_of_Singapore.svg.png','Singapore'),(169,'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/255px-Flag_of_Slovakia.svg.png','Slovakia'),(170,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/180px-Flag_of_Slovenia.svg.png','Slovenia'),(171,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_the_Solomon_Islands.svg/180px-Flag_of_the_Solomon_Islands.svg.png','Solomon Islands'),(172,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Somalia.svg/150px-Flag_of_Somalia.svg.png','Somalia'),(173,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png','South Africa'),(174,'https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/150px-Flag_of_Spain.svg.png','Spain'),(175,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/180px-Flag_of_Sri_Lanka.svg.png','Sri Lanka'),(176,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Sudan.svg/180px-Flag_of_Sudan.svg.png','Sudan'),(177,'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_South_Sudan.svg/180px-Flag_of_South_Sudan.svg.png','South Sudan'),(178,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/150px-Flag_of_Suriname.svg.png','Suriname'),(179,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/150px-Flag_of_Eswatini.svg.png','Swaziland'),(180,'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/160px-Flag_of_Sweden.svg.png','Sweden'),(181,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/170px-Flag_of_Switzerland.svg.png','Switzerland'),(182,'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/150px-Flag_of_Syria.svg.png','Syria'),(183,'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Tajikistan.svg/180px-Flag_of_Tajikistan.svg.png','Tajikistan'),(184,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Tanzania.svg/255px-Flag_of_Tanzania.svg.png','Tanzania'),(185,'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/150px-Flag_of_Thailand.svg.png','Thailand'),(186,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/180px-Flag_of_East_Timor.svg.png','East Timor'),(187,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Flag_of_Togo.svg/162px-Flag_of_Togo.svg.png','Togo'),(188,'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Tonga.svg/180px-Flag_of_Tonga.svg.png','Tonga'),(189,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/167px-Flag_of_Trinidad_and_Tobago.svg.png','Trinidad and Tobago'),(190,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/150px-Flag_of_Tunisia.svg.png','Tunisia'),(191,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/220px-Flag_of_Turkey.svg.png','Turkey'),(192,'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Turkmenistan.svg/150px-Flag_of_Turkmenistan.svg.png','Turkmenistan'),(193,'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Tuvalu.svg/180px-Flag_of_Tuvalu.svg.png','Tuvalu'),(194,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/150px-Flag_of_Uganda.svg.png','Uganda'),(195,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/255px-Flag_of_Ukraine.svg.png','Ukraine'),(196,'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/180px-Flag_of_the_United_Arab_Emirates.svg.png','United Arab Emirates'),(197,'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/180px-Flag_of_the_United_States.svg.png','United States'),(198,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/255px-Flag_of_Uruguay.svg.png','Uruguay'),(199,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/180px-Flag_of_Uzbekistan.svg.png','Uzbekistan'),(200,'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Vanuatu.svg/167px-Flag_of_Vanuatu.svg.png','Vanuatu'),(201,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/150px-Flag_of_Venezuela.svg.png','Venezuela'),(202,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/255px-Flag_of_Vietnam.svg.png','Vietnam'),(203,'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_the_United_States_Virgin_Islands.svg/220px-Flag_of_the_United_States_Virgin_Islands.svg.png','Virgin Islands'),(204,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Yemen.svg/150px-Flag_of_Yemen.svg.png','Yemen'),(205,'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Zambia.svg/150px-Flag_of_Zambia.svg.png','Zambia'),(206,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/180px-Flag_of_Zimbabwe.svg.png','Zimbabwe');
 /*!40000 ALTER TABLE `countries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cricket`
+--
+
+DROP TABLE IF EXISTS `cricket`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cricket` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cricket`
+--
+
+LOCK TABLES `cricket` WRITE;
+/*!40000 ALTER TABLE `cricket` DISABLE KEYS */;
+INSERT INTO `cricket` VALUES (1,73,1,0,0,1),(2,67,0,1,0,1);
+/*!40000 ALTER TABLE `cricket` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `croquet`
+--
+
+DROP TABLE IF EXISTS `croquet`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `croquet` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `croquet`
+--
+
+LOCK TABLES `croquet` WRITE;
+/*!40000 ALTER TABLE `croquet` DISABLE KEYS */;
+INSERT INTO `croquet` VALUES (1,67,3,2,2,7);
+/*!40000 ALTER TABLE `croquet` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -743,6 +855,34 @@ INSERT INTO `ice_hockey` VALUES (1,35,13,6,3,22),(2,197,4,11,2,17),(3,180,2,4,5,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `jeu_de_paume`
+--
+
+DROP TABLE IF EXISTS `jeu_de_paume`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `jeu_de_paume` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `jeu_de_paume`
+--
+
+LOCK TABLES `jeu_de_paume` WRITE;
+/*!40000 ALTER TABLE `jeu_de_paume` DISABLE KEYS */;
+INSERT INTO `jeu_de_paume` VALUES (1,73,0,1,1,2),(2,197,1,0,0,1);
+/*!40000 ALTER TABLE `jeu_de_paume` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `judo`
 --
 
@@ -768,6 +908,34 @@ LOCK TABLES `judo` WRITE;
 /*!40000 ALTER TABLE `judo` DISABLE KEYS */;
 INSERT INTO `judo` VALUES (1,94,39,19,26,84),(2,67,14,10,25,49),(3,100,11,16,16,43),(4,51,6,14,16,36),(5,155,12,9,22,43),(6,135,4,2,17,23),(7,41,8,3,11,22),(8,27,4,3,15,22),(9,73,0,8,11,19),(10,71,5,9,23,37),(11,92,4,4,7,15),(12,197,2,4,8,14),(13,19,2,1,9,12),(14,84,1,3,5,9),(15,150,3,3,2,8),(16,70,3,2,3,8),(17,99,2,2,4,8),(18,127,1,3,4,8),(19,174,3,1,2,6),(20,154,1,2,3,6),(21,199,0,2,4,6),(22,12,2,2,1,5),(23,170,2,0,3,5),(24,35,0,2,3,5),(25,91,0,1,4,5),(26,13,1,2,1,4),(27,181,1,1,2,4),(28,96,0,2,1,3),(29,30,0,1,2,3),(30,195,0,1,2,3),(31,63,0,0,3,3),(32,8,1,0,1,2),(33,18,1,0,1,2),(34,74,1,0,1,2),(35,191,1,0,1,2),(36,3,0,1,1,2),(37,43,0,1,1,2),(38,59,0,1,1,2),(39,11,0,0,2,2),(40,151,0,0,2,2),(41,165,0,0,2,2),(42,53,1,0,1,2),(43,101,1,0,0,1),(44,169,0,1,0,1),(45,85,0,0,1,1),(46,103,0,0,1,1),(47,105,0,0,1,1),(48,183,0,0,1,1),(49,196,0,0,1,1);
 /*!40000 ALTER TABLE `judo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `lacrosse`
+--
+
+DROP TABLE IF EXISTS `lacrosse`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `lacrosse` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lacrosse`
+--
+
+LOCK TABLES `lacrosse` WRITE;
+/*!40000 ALTER TABLE `lacrosse` DISABLE KEYS */;
+INSERT INTO `lacrosse` VALUES (1,35,2,0,1,3),(2,73,0,1,0,1),(3,197,0,1,0,1);
+/*!40000 ALTER TABLE `lacrosse` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -827,6 +995,30 @@ INSERT INTO `modern_pentathlon` VALUES (1,84,9,8,5,22),(2,180,9,7,5,21),(3,155,9
 UNLOCK TABLES;
 
 --
+-- Table structure for table `non_medals`
+--
+
+DROP TABLE IF EXISTS `non_medals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `non_medals` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `non_medals`
+--
+
+LOCK TABLES `non_medals` WRITE;
+/*!40000 ALTER TABLE `non_medals` DISABLE KEYS */;
+INSERT INTO `non_medals` VALUES (1,126),(2,161),(3,5),(4,24),(5,119),(6,131),(7,134),(8,25),(9,114),(10,118),(11,2),(12,20),(13,37),(14,39),(15,45),(16,82),(17,108),(18,137),(19,21),(20,28),(21,60),(22,78),(23,107),(24,167),(25,179),(26,7),(27,38),(28,46),(29,109),(30,115),(31,146),(32,4),(33,6),(34,16),(35,23),(36,31),(37,33),(38,61),(39,69),(40,76),(41,104),(42,121),(43,141),(44,156),(45,166),(46,171),(47,172),(48,10),(49,47),(50,117),(51,159),(52,200),(53,56),(54,204),(55,36),(56,44),(57,79),(58,133),(59,144),(60,157),(61,158),(62,162),(63,186),(64,192),(65,29),(66,124),(67,143),(68,98),(69,120),(70,193),(71,177);
+/*!40000 ALTER TABLE `non_medals` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `nordic_combined`
 --
 
@@ -852,6 +1044,90 @@ LOCK TABLES `nordic_combined` WRITE;
 /*!40000 ALTER TABLE `nordic_combined` DISABLE KEYS */;
 INSERT INTO `nordic_combined` VALUES (1,140,13,10,8,31),(2,12,3,2,10,15),(3,71,11,6,9,26),(4,66,4,8,2,14),(5,94,2,3,0,5),(6,67,2,1,1,4),(7,197,1,3,0,4),(8,181,1,2,1,4),(9,155,0,1,3,4),(10,180,0,1,1,2),(11,92,0,0,1,1),(12,150,0,0,1,1);
 /*!40000 ALTER TABLE `nordic_combined` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `polo`
+--
+
+DROP TABLE IF EXISTS `polo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `polo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `polo`
+--
+
+LOCK TABLES `polo` WRITE;
+/*!40000 ALTER TABLE `polo` DISABLE KEYS */;
+INSERT INTO `polo` VALUES (1,73,2,3,1,6),(2,8,2,0,0,2),(3,73,0,1,1,2),(4,123,0,0,2,2),(5,174,0,1,0,1);
+/*!40000 ALTER TABLE `polo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `rackets`
+--
+
+DROP TABLE IF EXISTS `rackets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rackets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rackets`
+--
+
+LOCK TABLES `rackets` WRITE;
+/*!40000 ALTER TABLE `rackets` DISABLE KEYS */;
+INSERT INTO `rackets` VALUES (1,73,2,2,3,7);
+/*!40000 ALTER TABLE `rackets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `roque`
+--
+
+DROP TABLE IF EXISTS `roque`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `roque` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `roque`
+--
+
+LOCK TABLES `roque` WRITE;
+/*!40000 ALTER TABLE `roque` DISABLE KEYS */;
+INSERT INTO `roque` VALUES (1,197,1,1,1,3);
+/*!40000 ALTER TABLE `roque` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -908,6 +1184,34 @@ LOCK TABLES `rugby_sevens` WRITE;
 /*!40000 ALTER TABLE `rugby_sevens` DISABLE KEYS */;
 INSERT INTO `rugby_sevens` VALUES (1,11,1,0,0,1),(2,65,1,0,0,1),(3,73,0,1,0,1),(4,136,0,1,0,1),(5,35,0,0,1,1),(6,173,0,0,1,1);
 /*!40000 ALTER TABLE `rugby_sevens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `rugby_union`
+--
+
+DROP TABLE IF EXISTS `rugby_union`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rugby_union` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rugby_union`
+--
+
+LOCK TABLES `rugby_union` WRITE;
+/*!40000 ALTER TABLE `rugby_union` DISABLE KEYS */;
+INSERT INTO `rugby_union` VALUES (1,67,1,2,0,3),(2,197,2,0,0,2),(3,73,0,2,0,2),(4,11,1,0,0,1),(5,71,0,1,0,1),(6,154,0,0,1,1);
+/*!40000 ALTER TABLE `rugby_union` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1076,6 +1380,34 @@ LOCK TABLES `snowboarding` WRITE;
 /*!40000 ALTER TABLE `snowboarding` DISABLE KEYS */;
 INSERT INTO `snowboarding` VALUES (1,197,14,7,10,31),(2,181,8,2,3,13),(3,67,4,4,4,12),(4,35,4,4,3,11),(5,12,2,1,4,7),(6,71,1,4,2,7),(7,155,2,2,1,5),(8,11,1,2,1,4),(9,94,0,3,1,4),(10,140,0,3,1,4),(11,66,0,2,2,4),(12,53,2,0,1,3),(13,92,1,1,1,3),(14,170,0,1,2,3),(15,73,0,0,2,2),(16,135,1,0,0,1),(17,41,0,1,0,1),(18,169,0,1,0,1),(19,100,0,1,0,1),(20,180,0,1,0,1),(21,136,0,0,1,1),(22,174,0,0,1,1);
 /*!40000 ALTER TABLE `snowboarding` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `softball`
+--
+
+DROP TABLE IF EXISTS `softball`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `softball` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `softball`
+--
+
+LOCK TABLES `softball` WRITE;
+/*!40000 ALTER TABLE `softball` DISABLE KEYS */;
+INSERT INTO `softball` VALUES (1,197,3,1,0,4),(2,11,0,1,3,4),(3,94,1,1,1,3),(4,41,0,1,0,1);
+/*!40000 ALTER TABLE `softball` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1261,7 +1593,7 @@ CREATE TABLE `total` (
   `bronze` int(11) DEFAULT NULL,
   `total` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1270,7 +1602,7 @@ CREATE TABLE `total` (
 
 LOCK TABLES `total` WRITE;
 /*!40000 ALTER TABLE `total` DISABLE KEYS */;
-INSERT INTO `total` VALUES (1,197,1127,907,793,2827),(2,155,725,593,592,1910),(3,73,274,299,310,883),(4,71,578,589,587,1754),(5,67,248,276,316,840),(6,92,246,214,241,701),(7,180,202,216,234,652),(8,41,237,195,176,608),(9,140,188,174,158,520),(10,11,155,172,197,524),(11,35,137,166,198,501),(12,84,176,149,173,498),(13,94,156,158,183,497),(14,66,144,148,178,470),(15,135,130,137,149,416),(16,181,106,120,119,345),(17,100,121,112,104,337),(18,12,82,114,123,319),(19,154,89,95,123,307),(20,150,75,90,141,306),(21,51,78,68,80,226),(22,30,52,89,83,224),(23,54,45,75,75,195),(24,53,75,86,98,259),(25,19,41,55,58,154),(26,174,46,64,44,154),(27,27,30,36,63,129),(28,195,38,31,60,129),(29,136,46,28,46,120),(30,74,33,43,40,116),(31,97,31,38,34,103),(32,18,20,32,44,96),(33,165,31,43,40,114),(34,191,39,24,28,91),(35,173,26,31,29,86),(36,93,22,35,21,78),(37,8,21,25,28,74),(38,96,16,24,31,71),(39,88,20,22,27,69),(40,123,13,24,32,69),(41,99,16,17,23,56),(42,64,22,11,21,54),(43,50,15,16,13,44),(44,13,7,11,24,42),(45,63,13,11,17,41),(46,170,7,13,20,40),(47,169,12,16,8,36),(48,185,9,8,16,33),(49,59,7,10,15,32),(50,70,8,7,17,32),(51,87,7,13,12,32),(52,90,9,10,12,31),(53,199,8,6,17,31),(54,43,5,9,14,28),(55,86,9,7,12,28),(56,105,4,14,10,28),(57,127,2,10,14,26),(58,111,6,6,13,25),(59,139,3,10,12,25),(60,151,4,8,12,24),(61,42,5,7,12,24),(62,129,6,5,12,23),(63,189,3,5,13,21),(64,3,5,4,8,17),(65,201,2,4,9,15),(66,9,2,6,6,14),(67,14,6,2,6,14),(68,40,2,7,4,13),(69,190,4,2,7,13),(70,116,0,7,4,11),(71,110,2,2,6,10),(72,142,3,3,4,10),(73,149,0,3,7,10),(74,198,2,2,6,10),(75,91,1,1,7,9),(76,152,1,2,6,9),(77,206,3,4,1,8),(78,57,3,2,2,7),(79,194,2,3,2,7),(80,34,3,1,2,6),(81,125,0,2,3,5),(82,153,0,1,4,5),(83,168,1,2,2,5),(84,48,1,1,2,4),(85,72,0,1,3,4),(86,85,0,2,2,4),(87,103,0,1,3,4),(88,106,0,2,2,4),(89,112,1,3,0,4),(90,132,0,4,0,4),(91,148,1,3,0,4),(92,183,1,1,2,4),(93,202,1,3,0,4),(94,15,2,1,0,3),(95,49,1,1,1,3),(96,83,1,1,1,3),(97,145,1,0,2,3),(98,163,0,1,2,3),(99,182,1,1,1,3),(100,1,0,0,2,2);
+INSERT INTO `total` VALUES (1,197,1127,907,793,2827),(2,155,725,593,592,1910),(3,73,274,299,310,883),(4,71,578,589,587,1754),(5,67,248,276,316,840),(6,92,246,214,241,701),(7,180,202,216,234,652),(8,41,237,195,176,608),(9,140,188,174,158,520),(10,11,155,172,197,524),(11,35,137,166,198,501),(12,84,176,149,173,498),(13,94,156,158,183,497),(14,66,144,148,178,470),(15,135,130,137,149,416),(16,181,106,120,119,345),(17,100,121,112,104,337),(18,12,82,114,123,319),(19,154,89,95,123,307),(20,150,75,90,141,306),(21,51,78,68,80,226),(22,30,52,89,83,224),(23,54,45,75,75,195),(24,53,75,86,98,259),(25,19,41,55,58,154),(26,174,46,64,44,154),(27,27,30,36,63,129),(28,195,38,31,60,129),(29,136,46,28,46,120),(30,74,33,43,40,116),(31,97,31,38,34,103),(32,18,20,32,44,96),(33,165,31,43,40,114),(34,191,39,24,28,91),(35,173,26,31,29,86),(36,93,22,35,21,78),(37,8,21,25,28,74),(38,96,16,24,31,71),(39,88,20,22,27,69),(40,123,13,24,32,69),(41,99,16,17,23,56),(42,64,22,11,21,54),(43,50,15,16,13,44),(44,13,7,11,24,42),(45,63,13,11,17,41),(46,170,7,13,20,40),(47,169,12,16,8,36),(48,185,9,8,16,33),(49,59,7,10,15,32),(50,70,8,7,17,32),(51,87,7,13,12,32),(52,90,9,10,12,31),(53,199,8,6,17,31),(54,43,5,9,14,28),(55,86,9,7,12,28),(56,105,4,14,10,28),(57,127,2,10,14,26),(58,111,6,6,13,25),(59,139,3,10,12,25),(60,151,4,8,12,24),(61,42,5,7,12,24),(62,129,6,5,12,23),(63,189,3,5,13,21),(64,3,5,4,8,17),(65,201,2,4,9,15),(66,9,2,6,6,14),(67,14,6,2,6,14),(68,40,2,7,4,13),(69,190,4,2,7,13),(70,116,0,7,4,11),(71,110,2,2,6,10),(72,142,3,3,4,10),(73,149,0,3,7,10),(74,198,2,2,6,10),(75,91,1,1,7,9),(76,152,1,2,6,9),(77,206,3,4,1,8),(78,57,3,2,2,7),(79,194,2,3,2,7),(80,34,3,1,2,6),(81,125,0,2,3,5),(82,153,0,1,4,5),(83,168,1,2,2,5),(84,48,1,1,2,4),(85,72,0,1,3,4),(86,85,0,2,2,4),(87,103,0,1,3,4),(88,106,0,2,2,4),(89,112,1,3,0,4),(90,132,0,4,0,4),(91,148,1,3,0,4),(92,183,1,1,2,4),(93,202,1,3,0,4),(94,15,2,1,0,3),(95,49,1,1,1,3),(96,83,1,1,1,3),(97,145,1,0,2,3),(98,163,0,1,2,3),(99,182,1,1,1,3),(100,1,0,0,2,2),(101,32,1,1,0,2),(102,58,1,1,0,2),(103,75,1,1,0,2),(104,81,0,1,1,2),(105,102,1,0,3,4),(106,130,1,0,1,2),(107,138,0,1,1,2),(108,175,0,2,0,2),(109,178,1,0,1,2),(110,184,0,2,0,2),(111,196,1,0,1,2),(112,205,0,1,1,2),(113,17,0,0,1,1),(114,22,0,0,1,1),(115,26,0,1,0,1),(116,52,0,1,0,1),(117,55,0,0,1,1),(118,62,0,0,1,1),(119,65,1,0,0,1),(120,68,0,1,0,1),(121,77,0,1,0,1),(122,80,0,0,1,1),(123,89,0,0,1,1),(124,95,1,0,0,1),(125,101,1,0,0,1),(126,113,0,0,1,1),(127,122,0,0,1,1),(128,128,0,1,0,1),(129,147,0,1,0,1),(130,160,0,1,0,1),(131,164,0,1,0,1),(132,176,0,1,0,1),(133,187,0,0,1,1),(134,188,0,1,0,1),(135,203,0,1,0,1);
 /*!40000 ALTER TABLE `total` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1303,6 +1635,34 @@ INSERT INTO `triathlon` VALUES (1,73,2,1,2,5),(2,181,2,1,2,5),(3,11,1,2,2,5),(4,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tug_of_war`
+--
+
+DROP TABLE IF EXISTS `tug_of_war`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tug_of_war` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tug_of_war`
+--
+
+LOCK TABLES `tug_of_war` WRITE;
+/*!40000 ALTER TABLE `tug_of_war` DISABLE KEYS */;
+INSERT INTO `tug_of_war` VALUES (1,73,2,2,1,5),(2,197,1,1,1,3),(3,180,1,0,0,1),(4,67,0,1,0,1),(5,135,0,1,0,1),(6,19,0,0,1,1);
+/*!40000 ALTER TABLE `tug_of_war` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `volleyball`
 --
 
@@ -1328,6 +1688,34 @@ LOCK TABLES `volleyball` WRITE;
 /*!40000 ALTER TABLE `volleyball` DISABLE KEYS */;
 INSERT INTO `volleyball` VALUES (1,155,8,8,3,19),(2,27,5,3,2,10),(3,197,3,3,4,10),(4,94,3,3,3,9),(5,41,3,1,2,6),(6,92,0,3,3,6),(7,51,3,0,2,5),(8,150,1,0,2,3),(9,135,1,1,0,2),(10,165,1,1,1,3),(11,71,0,2,0,2),(12,30,0,1,1,2),(13,53,0,1,1,2),(14,148,0,1,0,1),(15,8,0,0,1,1),(16,99,0,0,1,1),(17,154,0,0,1,1),(18,100,0,0,1,1);
 /*!40000 ALTER TABLE `volleyball` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `water_motorsports`
+--
+
+DROP TABLE IF EXISTS `water_motorsports`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `water_motorsports` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `gold` int(11) DEFAULT NULL,
+  `silver` int(11) DEFAULT NULL,
+  `bronze` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `water_motorsports`
+--
+
+LOCK TABLES `water_motorsports` WRITE;
+/*!40000 ALTER TABLE `water_motorsports` DISABLE KEYS */;
+INSERT INTO `water_motorsports` VALUES (1,73,2,0,0,2),(2,67,1,0,0,1);
+/*!40000 ALTER TABLE `water_motorsports` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1451,4 +1839,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-08-07 15:06:24
+-- Dump completed on 2019-08-08 14:57:56

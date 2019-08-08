@@ -204,6 +204,60 @@ include('config.php');
 		<br>
 		<div class="row">
 			<div class="col">
+				<h2>Past Sports at the Olympic Games</h2>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/baseball.php">Baseball</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/softball.php">Softball</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/basque.php">Basque Pelota</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/cricket.php">Cricket</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/croquet.php">Croquet</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/jdp.php">Jeu De Paume</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/lacrosse.php">Lacrosse</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/polo.php">Polo</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="yellow"><a href="olympics/rackets.php">Rackets</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/roque.php">Roque</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="cyan"><a href="olympics/rugbyunion.php">Rugby Union</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="magenta"><a href="olympics/tugofwar.php">Tug Of War</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/waterms.php">Water Motorsports</a></div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col">
 				<h2>Olympics Medal Tables</h2>
 			</div>
 		</div>
@@ -217,6 +271,9 @@ include('config.php');
 			</div>
 			<div class="col-12 col-md-3 col-lg-3">
 				<div class="yellow"><a href="olympics/total.php">Total</a></div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3">
+				<div class="white"><a href="olympics/nonmedals.php">Non-Medals</a></div>
 			</div>
 		</div>
 	</div>
