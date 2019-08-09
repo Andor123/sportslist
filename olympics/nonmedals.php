@@ -29,11 +29,12 @@ include('../config.php');
 						<tr>
 							<th>Flag</th>
 							<th>Country</th>
+							<th>Games</th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php
-						$sql = "SELECT c.flag, c.name FROM countries c INNER JOIN non_medals nm ON c.id=nm.country_id ORDER BY c.name ASC";
+						$sql = "SELECT c.flag, c.name, nm.games FROM countries c INNER JOIN non_medals nm ON c.id=nm.country_id ORDER BY c.name ASC";
 						$result = mysqli_query($connection, $sql);
 						if (mysqli_num_rows($result) > 0) 
 						{
@@ -43,6 +44,7 @@ include('../config.php');
 								<tr>
 									<td><img class="image" alt="country" src="<?php echo $row['flag']; ?>"></td>
 									<td><?php echo $row['name']; ?></td>
+									<td><?php echo $row['games']; ?></td>
 								</tr>
 								<?php
 							}

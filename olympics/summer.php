@@ -29,6 +29,7 @@ include('../config.php');
 						<tr>
 							<th>Flag</th>
 							<th>Country</th>
+							<th>Games</th>
 							<th>Gold</th>
 							<th>Silver</th>
 							<th>Bronze</th>
@@ -37,7 +38,7 @@ include('../config.php');
 					</thead>
 					<tbody>
 						<?php
-						$sql = "SELECT c.flag, c.name, smr.gold, smr.silver, smr.bronze, smr.total FROM countries c INNER JOIN summer smr ON c.id=smr.country_id ORDER BY smr.gold DESC, smr.silver DESC, smr.bronze DESC";
+						$sql = "SELECT c.flag, c.name, smr.games, smr.gold, smr.silver, smr.bronze, smr.total FROM countries c INNER JOIN summer smr ON c.id=smr.country_id ORDER BY smr.gold DESC, smr.silver DESC, smr.bronze DESC";
 						$result = mysqli_query($connection, $sql);
 						if (mysqli_num_rows($result) > 0) 
 						{
@@ -47,6 +48,7 @@ include('../config.php');
 								<tr>
 									<td><img class="image" alt="country" src="<?php echo $row['flag']; ?>"></td>
 									<td><?php echo $row['name']; ?></td>
+									<td><?php echo $row['games']; ?></td>
 									<td><?php echo $row['gold']; ?></td>
 									<td><?php echo $row['silver']; ?></td>
 									<td><?php echo $row['bronze']; ?></td>
