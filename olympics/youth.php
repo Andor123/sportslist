@@ -5,16 +5,16 @@ include('../config.php');
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Countries without Medals at the Olympics</title>
+	<title>All-Time Youth Olympics Medal Table</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/white.css">
+	<link rel="stylesheet" type="text/css" href="../css/magenta.css">
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
-				<h1 class="display-4">Countries without Medals at the Olympics</h1>
+				<h1 class="display-4">All-Time Youth Olympics Medal Table</h1>
 			</div>
 		</div>
 		<div class="row">
@@ -29,14 +29,15 @@ include('../config.php');
 						<tr>
 							<th>Flag</th>
 							<th>Country</th>
-							<th>Summer</th>
-							<th>Winter</th>
-							<th>Games</th>
+							<th>Gold</th>
+							<th>Silver</th>
+							<th>Bronze</th>
+							<th>Total</th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php
-						$sql = "SELECT c.flag, c.name, nm.summer, nm.winter, nm.games FROM countries c INNER JOIN non_medals nm ON c.id=nm.country_id ORDER BY c.name ASC";
+						$sql = "SELECT c.flag, c.name, yth.gold, yth.silver, yth.bronze, yth.total FROM countries c INNER JOIN youth yth ON c.id=yth.country_id ORDER BY yth.gold DESC, yth.silver DESC, yth.bronze DESC";
 						$result = mysqli_query($connection, $sql);
 						if (mysqli_num_rows($result) > 0) 
 						{
@@ -46,9 +47,10 @@ include('../config.php');
 								<tr>
 									<td><img class="image" alt="country" src="<?php echo $row['flag']; ?>"></td>
 									<td><?php echo $row['name']; ?></td>
-									<td><?php echo $row['summer']; ?></td>
-									<td><?php echo $row['winter']; ?></td>
-									<td><?php echo $row['games']; ?></td>
+									<td><?php echo $row['gold']; ?></td>
+									<td><?php echo $row['silver']; ?></td>
+									<td><?php echo $row['bronze']; ?></td>
+									<td><?php echo $row['total']; ?></td>
 								</tr>
 								<?php
 							}
