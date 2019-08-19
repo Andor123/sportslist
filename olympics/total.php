@@ -1,5 +1,16 @@
 <?php
 include('../config.php');
+if (isset($_POST["name"])) 
+{
+	$name = $_POST["name"];
+	$sql = "SELECT c.flag, c.name, tl.games, tl.gold, tl.silver, tl.bronze, tl.total FROM countries c INNER JOIN total tl ON c.id=tl.country_id WHERE c.name LIKE '%$name%' ORDER BY tl.gold DESC, tl.silver DESC, tl.bronze DESC";
+	$result = mysqli_query($connection, $sql);
+}
+else 
+{
+	$sql = "SELECT c.flag, c.name, tl.games, tl.gold, tl.silver, tl.bronze, tl.total FROM countries c INNER JOIN total tl ON c.id=tl.country_id ORDER BY tl.gold DESC, tl.silver DESC, tl.bronze DESC";
+	$result = mysqli_query($connection, $sql);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,6 +35,16 @@ include('../config.php');
 		</div>
 		<div class="row">
 			<div class="col">
+				<form method="post" action="">
+					<div class="form-group">
+						<label for="name">Country Name:</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter Country Name">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
 				<table class="table" align="center">
 					<thead>
 						<tr>
@@ -38,8 +59,6 @@ include('../config.php');
 					</thead>
 					<tbody>
 						<?php
-						$sql = "SELECT c.flag, c.name, tl.games, tl.gold, tl.silver, tl.bronze, tl.total FROM countries c INNER JOIN total tl ON c.id=tl.country_id ORDER BY tl.gold DESC, tl.silver DESC, tl.bronze DESC";
-						$result = mysqli_query($connection, $sql);
 						if (mysqli_num_rows($result) > 0) 
 						{
 							while ($row = mysqli_fetch_array($result)) 

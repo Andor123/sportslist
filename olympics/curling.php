@@ -1,5 +1,16 @@
 <?php
 include('../config.php');
+if (isset($_POST["name"])) 
+{
+	$name = $_POST["name"];
+	$sql = "SELECT c.flag, c.name, cr.gold, cr.silver, cr.bronze, cr.total FROM countries c INNER JOIN curling cr ON c.id=cr.country_id WHERE c.name LIKE '%$name%' ORDER BY cr.gold DESC, cr.silver DESC, cr.bronze DESC";
+	$result = mysqli_query($connection, $sql);
+}
+else 
+{
+	$sql = "SELECT c.flag, c.name, cr.gold, cr.silver, cr.bronze, cr.total FROM countries c INNER JOIN curling cr ON c.id=cr.country_id ORDER BY cr.gold DESC, cr.silver DESC, cr.bronze DESC";
+	$result = mysqli_query($connection, $sql);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,6 +35,16 @@ include('../config.php');
 		</div>
 		<div class="row">
 			<div class="col">
+				<form method="post" action="">
+					<div class="form-group">
+						<label for="name">Country Name:</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter Country Name">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
 				<table class="table" align="center">
 					<thead>
 						<tr>
@@ -37,8 +58,6 @@ include('../config.php');
 					</thead>
 					<tbody>
 						<?php
-						$sql = "SELECT c.flag, c.name, cr.gold, cr.silver, cr.bronze, cr.total FROM countries c INNER JOIN curling cr ON c.id=cr.country_id ORDER BY cr.gold DESC, cr.silver DESC, cr.bronze DESC";
-						$result = mysqli_query($connection, $sql);
 						if (mysqli_num_rows($result) > 0) 
 						{
 							while ($row = mysqli_fetch_array($result)) 
